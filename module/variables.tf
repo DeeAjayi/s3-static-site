@@ -10,3 +10,7 @@ variable "aws_profile" {
   type = string
   default = "default"
 }
+
+variable "base_domain_name" {
+  type = string
+}
