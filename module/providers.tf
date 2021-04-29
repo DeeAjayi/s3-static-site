@@ -1,12 +1,10 @@
 provider "aws" {
-  region = var.aws_region
-  version = "~> 2.52"
-  profile = var.aws_profile
+  region = "eu-west-1"
+  profile = "telios"
 }
 
 provider "aws" {
   alias = "acm_region"
-  profile = var.aws_profile
+  profile = "telios"
   region  = "us-east-1"
-  version = "~> 2.52"
 }
